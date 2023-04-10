@@ -1,39 +1,34 @@
-/* Shop Now Alert */
-
-@media only screen and (max-width: 768px) {
-    .shopalert { text-align: center; padding: 10px; background-color: #f44336; color: white; font-size: 15px; }
-    .shopalert .button {font-size: 15px; color: white; background: black;}
-} /* Phone */
-
 @media only screen and (min-width: 768px) {
+     /* Shop Now Alert */ 
     .shopalert { text-align: center; padding: 15px; background-color: #f44336; color: white; font-size: 30px;}
     .shopalert .button {font-size: 30px; color: white; background: black;}
-} /* Desktop */
+    
+    /* ---------------------- */
+    
+    .topnav { overflow: hidden; background-color: #333; position: relative; }
+    .topnav #topnavMylink { display: none; }
+    .topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size: 17px; display: block;}
+    .topnav a.icon { text-decoration: none; background: black; display: block; position: absolute; right: 0; top: 0; } 
+    .topnav .icon:hover { background-color: #ddd; color: black; }
+    .topnav a.active { background-color: black; color: white; }
+} 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
 /* top navigation */
-
 @media only screen and (max-width: 768px) {
+     /* Shop Now Alert */ 
+    .shopalert { text-align: center; padding: 10px; background-color: #f44336; color: white; font-size: 15px; }
+    .shopalert .button {font-size: 15px; color: white; background: black;}
+    
+    /* ---------------------- */
+    
     .topnav { overflow: hidden; background-color: #333; position: relative; }
     .topnav #topnavMylink { display: none; }
-    .topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size: 17px;
-  display: block; }
+    .topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size: 17px; display: block; }
     .topnav a.icon { text-decoration: none; background: black; display: block; position: absolute; right: 0; top: 0; } 
     .topnav .icon:hover { background-color: #ddd; color: black; }
     .topnav a.active { background-color: black; color: white; }
 }
-
-@media only screen and (min-width: 768px) {
-    .topnav { overflow: hidden; background-color: #333; position: relative; }
-    .topnav #topnavMylink { display: none; }
-    .topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size: 17px;
-  display: block;}
-    .topnav a.icon { text-decoration: none; background: black; display: block; position: absolute; right: 0; top: 0; } 
-    .topnav .icon:hover { background-color: #ddd; color: black; }
-    .topnav a.active { background-color: black; color: white; }
-}
-
 
 
