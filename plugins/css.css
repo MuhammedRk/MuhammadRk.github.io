@@ -1,11 +1,14 @@
 /* Shop Now Alert */
-.shopalert { text-align: center; padding: 15px; background-color: #f44336; color: white; font-size: 30px;}
-.shopalert .button {font-size: 30px; color: white; background: black;}
 
-@media screen and (max-height: 450px) {
-    .shopalert { text-align: center; padding: 15px; background-color: #f44336; color: white; font-size: 20px;}
+@media only screen and (min-width: 450px) {
+    .shopalert { text-align: center; padding: 10px; background-color: #f44336; color: white; font-size: 15px;}
     .shopalert .button {font-size: 15px; color: white; background: black;}
-}
+} /* Phone */
+
+@media only screen and (min-width: 768px) {
+    .shopalert { text-align: center; padding: 15px; background-color: #f44336; color: white; font-size: 30px;}
+    .shopalert .button {font-size: 30px; color: white; background: black;}
+} /* Desktop */
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
