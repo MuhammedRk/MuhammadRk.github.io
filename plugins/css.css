@@ -38,8 +38,8 @@
     /* ---------------------- */
 
 
-.headinglogo { text-align: center; }
-.headinglogo .img {}
+.headinglogo { width: 100%; text-align: center; }
+.headinglogo .img { vertical-align: middle; }
 
 
      /* Change Photo */
