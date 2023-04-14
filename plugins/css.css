@@ -38,15 +38,19 @@
     /* ---------------------- */
 
 
-     /* Main Photo */
+.headinglogo { text-align: center; }
+.headinglogo .img {}
+
+
+     /* Change Photo */
 
 @media only screen and (min-width: 768px) {
-    .mainlogocenter { font-family: Verdana, sans-serif; }
-    .mainlogocenter .mainlogo { position: relative;}
+    .mainlogocenter { font-family: Verdana, sans-serif; border: 1px solid black; }
+    .mainlogocenter .mainlogo { position: relative;s }
     .mainlogocenter .main { display: none }
-    .mainlogocenter .logo { animation-name: fade; animation-duration: 1.5s; }
+    .mainlogocenter .logo { width: 100%; animation-name: fade; animation-duration: 1.5s; text-align: center;}
     .mainlogocenter .img { vertical-align: middle; }
-    .mainlogocenter .text { bottom: 8px; color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; text-align: center; }
+    .mainlogocenter .text { right: 8px; color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; text-align: center; }
     .mainlogocenter .prev, .next { top: 50%; cursor: pointer; position: absolute;  width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; }
     .mainlogocenter .next { right: 0; border-radius: 3px 0 0 3px; }
     .mainlogocenter .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
@@ -54,15 +58,11 @@
 
 @media only screen and (max-width: 768px) {
     .mainlogocenter { font-family: Verdana, sans-serif; }
-    .mainlogocenter .mainlogo { max-width: 100%; position: relative;}
+    .mainlogocenter .mainlogo { position: relative; }
     .mainlogocenter .main { display: none }
-    .mainlogocenter .logo { animation-name: fade; animation-duration: 1.5s; }
-    .mainlogocenter .img { vertical-align: middle; }
-    .mainlogocenter .heading { width: 100%; top: 0px; padding: 8px; position: absolute; text-align: center; }
-    .mainlogocenter .heading .transparent { position: absolute; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5); color: #f1f1f1; width: 95%; padding: 20px; }
-    .mainlogocenter .heading .transparent .headtext { font-family: Garamond, serif; }
-
-    .mainlogocenter .text { width: 100%; bottom: 8px; color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; width: 100%; text-align: center; }
+    .mainlogocenter .logo { width: 100%; animation-name: fade; animation-duration: 1.5s; }
+    .mainlogocenter .img { vertical-align: middle; middle; width:10px; }
+    .mainlogocenter .text {  bottom: 8px; color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; width: 100%; text-align: center; }
     .mainlogocenter .prev, .next { top: 50%; cursor: pointer; position: absolute;  width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; }
     .mainlogocenter .next { right: 0; border-radius: 3px 0 0 3px; }
     .mainlogocenter .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
