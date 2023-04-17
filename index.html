@@ -54,11 +54,13 @@
    	        }
 	    }
         </script>
-   
 
-        <br><br>
-        <div class="headinglogo"><img style="max-width: 100%; height: 50%;" src="images/heading.jpg"></div>
-        <br><br>
+
+        <div class="headinglogo"><img src="images/heading.jpg"></div>
+
+
+
+        <br>
 
         <!-- Main Photo -->
 
@@ -66,22 +68,22 @@
             <div class="mainlogo">
 
             <div class="main logo">
-                <img style="max-width: 100%; height: 50%;"  src="images/logo1.jpg">
+                <img style="width: 100%;" src="images/logo1.jpg">
                 <div class="text">Captionssss  Text</div>
             </div>
 
             <div class="main logo">
-                <img style="max-width: 100%; height: 50%;" src="images/logo2.jpg" >
+                <img style="width: 100%;" src="images/logo2.jpg" >
                 <div class="text">Caption reddddd Text</div>
             </div>
 
             <div class="main logo">
-                <img style="max-width: 100%; height: 50%;" src="images/logo3.jpg">
+                <img style="width: 100%;" src="images/logo3.jpg">
                 <div class="text">Caption rrert Text</div>
             </div>
 
             <div class="main logo">
-                <img style="max-width: 100%; height: 50%;" src="images/logo4.jpg">
+                <img style="width: 100%;" src="images/logo4.jpg">
                 <div class="text">Caption  ssddsc Text</div>
             </div>
 
@@ -126,12 +128,73 @@
            </script>
        </div>
 
-       <br><br>
+       <br>
 
+       <div class="service">
+           <a onclick="openhelpline()"><img class="service-icon" src="images/help-line.jpg"></a>
+           <a onclick="openfastdelivery()"><img class="service-icon" src="images/fast-delivery.png"></a>
+           <a onclick="openbuy()"><img class="service-icon" src="images/buy.png"></a>
+           <a onclick="openlocation()"><img class="service-icon" src="images/location.png"></a>
+           <a onclick="openinstagram()"><img class="service-icon" src="images/instagram.png"></a>
+       </div>
+        
+
+        <div id="helplineservicedata" class="servicedata">
+            <a href="javascript:void(0)" class="closebtn" onclick="closehelpline()">&times;</a>
+            <div>
+            <div style="border: 1px solid brown; color:aliceblue; margin: 100px; align-items: center;">
+                <h1 style="text-align: center;">HELP LINE</h1>
+            <form action="mailto:motechmuhammedwed@gmail.com" method="post" enctype="text/plain">
+                Name: <input type="text" name="name"><br>
+	            E-mail: <input type="text" name="mail"><br>
+		        Comment:<input type="text" name="comment" size="50"><br><br>
+		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+	    </form></div></div>
+        </div>
+
+        <div id="fastdelivaryservicedata" class="servicedata">
+            <a href="javascript:void(0)" class="closebtn" onclick="closefastdelivery()">&times;</a>
+            <div class="fast-delivery-text">We often need fast and reliable deliveries, fast delivery, offer same-day delivery of parcels.</div>
+        </div>
+
+
+        <div id="buyservicedata" class="servicedata">
+            <a href="javascript:void(0)" class="closebtn" onclick="closebuy()">&times;</a>
+            <div>esgsrgsgdsgsgsddgd</div>
+        </div>
+
+
+        <div id="locationservicedata" class="servicedata">
+            <a href="javascript:void(0)" class="closebtn" onclick="closelocation()">&times;</a>
+            <div>esgsrgsgdsgsgsddgd</div>
+        </div>
+
+
+        <div id="instagramservicedata" class="servicedata">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeinstagram()">&times;</a>
+            <div>esgsrgsgdsgsgsddgd</div>
+        </div>
+        <script> 
+            function openhelpline() { document.getElementById("helplineservicedata").style.width = "100%"; }
+            function closehelpline() { document.getElementById("helplineservicedata").style.width = "0%"; }
+
+            function openfastdelivery() { document.getElementById("fastdelivaryservicedata").style.width = "100%"; }
+            function closefastdelivery() { document.getElementById("fastdelivaryservicedata").style.width = "0%"; }
+
+            function openbuy() { document.getElementById("buyservicedata").style.width = "100%"; }
+            function closebuy() { document.getElementById("buyservicedata").style.width = "0%"; }
+
+            function openlocation() { document.getElementById("locationservicedata").style.width = "100%"; }
+            function closelocation() { document.getElementById("locationservicedata").style.width = "0%"; }
+
+            function openinstagram() { document.getElementById("instagramservicedata").style.width = "100%"; }
+            function closeinstagram() { document.getElementById("instagramservicedata").style.width = "0%"; }
+        </script>
+
+        <br><br>
 
 
 
     </body>
-
-</html>
-
+    </html>
