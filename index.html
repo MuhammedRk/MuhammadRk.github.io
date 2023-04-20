@@ -1,200 +1,120 @@
 <!DOCTYPE html>
 <html>
+    <!-- icon & title -->
     <head>
-        <title>SPEED GADGETS & PERFUMES</title>
-        <link rel="icon" type="images/x-icon" href="images/favicon-icon.png">
+        <title>Speed Gadgets & Perfumes</title>
         <link rel="stylesheet" href="plugins/css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
-
 
     <body>
 
-        <!-- Shop Now Alert -->
-        <div class="shopalert">
-	    <strong>Products</strong> List in instagram &nbsp;&nbsp;&nbsp; 
-            <span class="shopalertclosebtn"> 
-                <a align="center" target="_blank" href="https://instagram.com/speed.digitalsystems?igshid=ZDdkNTZiNTM="><button class="button">Shop Now</button></a>
-            </span>
+
+        <!-- HEADING LOGO -->
+        <div class="heading">
+            <center>
+                <img src="images/heading.jpg">
+            </center>
         </div>
 
 
 
-        <script>
-            var close = document.getElementsByClassName("shopalertclosebtn");
-            var i;
-            for (i = 0; i < close.length; i++) {
-                close[i].onclick = function(){
-                    var div = this.parentElement;
-                      div.style.opacity = "0";
-                      setTimeout(function(){ div.style.display = "none"; }, 600); 
-                }
-            }
-        </script>
-
-
-
-        <!-- Negative bar -->
-        <div class="topnav">
-        <a class="active">Home</a>
-        <div id="topnavMylink">
-            <a href="">Products</a>
-            <a href="">Service</a>
-            <a href="">Abouts</a>
+        <!-- CHANGING LOGO -->
+        <div>
+            <div class="show-photo">
+                <center>
+                    <img class="logo" src="images/logo1.jpg">
+                    <img class="logo" src="images/logo2.jpg">
+                    <img class="logo" src="images/logo3.jpg">
+                    <img class="logo" src="images/logo4.jpg">
+                </center>
+            </div>
+            <script src="plugins/javascript/change-logo.js"></script>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="closetopnav()">≡</a>
-        </div>
-
-        <script>
-	    function closetopnav() {
-  	        var x = document.getElementById("topnavMylink");
-  		if (x.style.display === "block") {
-    	  	  x.style.display = "none";
-	        } else {
-    		  x.style.display = "block";
-   	        }
-	    }
-        </script>
-
-
-        <div class="headinglogo"><img src="images/heading.jpg"></div>
-
-
-
-        <br>
-
-        <!-- Main Photo -->
-
-        <div class="mainlogocenter">
-            <div class="mainlogo">
-
-            <div class="main logo">
-                <img style="width: 100%;" src="images/logo1.jpg">
-                <div class="text">Captionssss  Text</div>
-            </div>
-
-            <div class="main logo">
-                <img style="width: 100%;" src="images/logo2.jpg" >
-                <div class="text">Caption reddddd Text</div>
-            </div>
-
-            <div class="main logo">
-                <img style="width: 100%;" src="images/logo3.jpg">
-                <div class="text">Caption rrert Text</div>
-            </div>
-
-            <div class="main logo">
-                <img style="width: 100%;" src="images/logo4.jpg">
-                <div class="text">Caption  ssddsc Text</div>
-            </div>
-
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            </div>
-
-            <script>
-                let slideIndex = 1;
-                let myIndex = 0;
-
-                showSlides(slideIndex);
-                carousel();
-
-                function plusSlides(n) { showSlides(slideIndex += n); }
-
-                function currentSlide(n) { showSlides(slideIndex = n); }
-
-                function showSlides(n) {
-                    let i;
-                    let slides = document.getElementsByClassName("main");
-                    if (n > slides.length) {slideIndex = 1}    
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                    }
-                    slides[slideIndex-1].style.display = "block";  
-                }
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("main");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) { myIndex = 1 }
-                    x[myIndex-1].style.display = "block";
-                    setTimeout(carousel, 3000);
-                }
-           </script>
-       </div>
-
-       <br>
-
-       <div class="service">
-           <a onclick="openhelpline()"><img class="service-icon" src="images/help-line.jpg"></a>
-           <a onclick="openfastdelivery()"><img class="service-icon" src="images/fast-delivery.png"></a>
-           <a onclick="openbuy()"><img class="service-icon" src="images/buy.png"></a>
-           <a onclick="openlocation()"><img class="service-icon" src="images/location.png"></a>
-           <a onclick="openinstagram()"><img class="service-icon" src="images/instagram.png"></a>
-       </div>
         
 
-        <div id="helplineservicedata" class="servicedata">
-            <a href="javascript:void(0)" class="closebtn" onclick="closehelpline()">&times;</a>
-            <div>
-            <div style="border: 1px solid brown; color:aliceblue; margin: 100px; align-items: center;">
-                <h1 style="text-align: center;">HELP LINE</h1>
-            <form action="mailto:motechmuhammedwed@gmail.com" method="post" enctype="text/plain">
-                Name: <input type="text" name="name"><br>
-	            E-mail: <input type="text" name="mail"><br>
-		        Comment:<input type="text" name="comment" size="50"><br><br>
-		<input type="submit" value="Send">
-		<input type="reset" value="Reset">
-	    </form></div></div>
+        <br><br>
+        
+        <!-- SERVICE LOGO -->
+        <div>
+            <div class="service-icon">
+                <center>
+                    <a onclick="openhelpline()"><img class="icon" src="images/help-line.jpg"></a>
+                    <a onclick="openfastdelivery()"><img class="icon" src="images/fast-delivery.png"></a>
+                    <a onclick="openbuy()"><img class="icon" src="images/buy.png"></a>
+                    <a onclick="openlocation()"><img class="icon" src="images/location.png"></a>
+                    <a onclick="openinstagram()"><img class="icon" src="images/instagram.png"></a>
+                </center>
+            </div>
+
+            <div id="helplineservicedata" class="service-icon-data">
+                <a href="javascript:void(0)" class="closebtndata" onclick="closehelplinedata()"><span>&times;</span></a>
+                <div class="heading"><h2>HELP LINE</h2></div>
+                <br>
+                <div class="content">esgsrgsgdsgsgsd  ff f f fff fffdgd</div>
+            </div>
+
+            <div id="fastdelivaryservicedata" class="service-icon-data">
+                <a href="javascript:void(0)" class="closebtndata" onclick="closefastdelivarydata()"><span>&times;</span></a>
+                <div class="heading"><h2>FAST DELIVARY</h2></div>
+                <br>
+                <div class="content">esgsrgsgdsgsgsddgd</div>
+            </div>
+    
+            <div id="buyservicedata" class="service-icon-data">
+                <a href="javascript:void(0)" class="closebtndata" onclick="closebuydata()"><span>&times;</span></a>
+                <div class="heading"><h2>BUY PRODUCTS</h2></div>
+                <br>
+                <div class="content">esgsrgsgdsgsgsddgd</div>
+            </div>
+    
+            <div id="locstionservicedata" class="service-icon-data">
+                <a href="javascript:void(0)" class="closebtndata" onclick="closelocstiondata()"><span>&times;</span></a>
+                <div class="heading"><h2>LOCATION</h2></div>
+                <br>
+                <div class="content">esgsrgsgdsgsgsddgd</div>
+            </div>
+    
+
+            <div id="instagramservicedata" class="service-icon-data">
+                <a href="javascript:void(0)" class="closebtndata" onclick="closeinstagram()"><span>&times;</span></a>
+                <div class="heading"><h2>INSTAGRAM PAGE</h2></div>
+                <br>
+                <iframe src="https://instagram.com/speed.digitalsystems?igshid=ZDdkNTZiNTM=" style="width: 100%; height: 100%;"></iframe>
+            </div>
+
+            <script src="plugins/javascript/service-icon.js"></script>
+
         </div>
 
-        <div id="fastdelivaryservicedata" class="servicedata">
-            <a href="javascript:void(0)" class="closebtn" onclick="closefastdelivery()">&times;</a>
-            <div class="fast-delivery-text">We often need fast and reliable deliveries, fast delivery, offer same-day delivery of parcels.</div>
-        </div>
-
-
-        <div id="buyservicedata" class="servicedata">
-            <a href="javascript:void(0)" class="closebtn" onclick="closebuy()">&times;</a>
-            <div>esgsrgsgdsgsgsddgd</div>
-        </div>
-
-
-        <div id="locationservicedata" class="servicedata">
-            <a href="javascript:void(0)" class="closebtn" onclick="closelocation()">&times;</a>
-            <div>esgsrgsgdsgsgsddgd</div>
-        </div>
-
-
-        <div id="instagramservicedata" class="servicedata">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeinstagram()">&times;</a>
-            <div>esgsrgsgdsgsgsddgd</div>
-        </div>
-        <script> 
-            function openhelpline() { document.getElementById("helplineservicedata").style.width = "100%"; }
-            function closehelpline() { document.getElementById("helplineservicedata").style.width = "0%"; }
-
-            function openfastdelivery() { document.getElementById("fastdelivaryservicedata").style.width = "100%"; }
-            function closefastdelivery() { document.getElementById("fastdelivaryservicedata").style.width = "0%"; }
-
-            function openbuy() { document.getElementById("buyservicedata").style.width = "100%"; }
-            function closebuy() { document.getElementById("buyservicedata").style.width = "0%"; }
-
-            function openlocation() { document.getElementById("locationservicedata").style.width = "100%"; }
-            function closelocation() { document.getElementById("locationservicedata").style.width = "0%"; }
-
-            function openinstagram() { document.getElementById("instagramservicedata").style.width = "100%"; }
-            function closeinstagram() { document.getElementById("instagramservicedata").style.width = "0%"; }
-        </script>
 
         <br><br>
+
+        <div>
+
+            <footer class="footer">
+                <div class="social-media">
+                    <a href="#"><img class="instagram" src="images/social/instagram.png"></a>
+                    <a href="#"><img class="facebook" src="images/social/facebook.png"></a>
+                    <a href="#"><img class="whatsapp" src="images/social/whatsapp.png"></a>
+                </div>
+
+            </footer>
+        </div>
+
+
+
+
+
+
+
+        <br><br><br>
+
+        
+
 
 
 
     </body>
-    </html>
+    
+</html>
